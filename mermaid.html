@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+    <title>Shelver</title>
+</head>
+
+<body>
+<pre class="mermaid">
+
+    %%{
+        init: {
+          'theme': 'base',
+          'themeVariables': {
+            'primaryColor': '#000',
+            'primaryTextColor': '#0ff',
+            'primaryBorderColor': '#0ff',
+            'lineColor': '#0ff',
+            'secondaryColor': '#006100',
+            'tertiaryColor': '#fff'
+          }
+        }
+      }%%
+      
+        flowchart LR
+
+            rd(Create<br>rough draft)-->doc(Finalize<br>documentation)
+            doc-->purch(Purchase<br>materials)
+            purch-->fab(Fabricate<br>components)
+            fab-->final(Assemble<br>components)
+            final-->update(Update documentation)
+        click rd href "javascript:sayHello();"
+
+    </pre>
+
+    <script type="module">
+        // import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs';
+        import mermaid from '/mermaid/mermaid.esm.min.mjs';
+        mermaid.initialize({ 
+            startOnLoad: true,
+            securityLevel: 'loose',
+            theme: 'base'
+        });
+        
+    </script>
+</body>
+</html>
