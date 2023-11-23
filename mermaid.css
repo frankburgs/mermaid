@@ -1,0 +1,16 @@
+body{
+    background-color: black;
+    color: white;
+    height: 100vh;
+}
+
+pre{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 100%;
+}
+
+svg{
+    transform: scale(1.1);
+}
