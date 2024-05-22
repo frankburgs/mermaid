@@ -5,7 +5,7 @@ Below the graph definition with class and classDef.
 
 By customizing the theme as shown below
 
-``` mermaid
+``` h
 %%{
   init: {
     'theme': 'base',
