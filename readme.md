@@ -1,9 +1,10 @@
 # Mermaid
 There are 3 ways to style a Mermaid graph.
 
-Below the graph definition with class and classDef.
+1. Below the graph definition with class and classDef.
 
-By customizing the theme as shown below
+2. By customizing the theme as shown below.
+This breaks jsx syntax.
 
 ``` h
 %%{
@@ -23,7 +24,8 @@ By customizing the theme as shown below
 }%%
 ```
 
-And by applying CSS rules as shown below
+3. By applying CSS rules as shown below.
+The arrows need fixing in this example.
 
 ``` css
 .cssClass > rect {
